@@ -1,0 +1,50 @@
+{
+  "$id": "https://sinstry.github.io/json-schema/list_view.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "schema of list view",
+  "type": "object",
+  "required": ["id", "label"],
+  "properties": {
+    "id": {
+      "description": "视图标识",
+      "type": "string"
+    },
+    "label": {
+      "description": "视图名称",
+      "type": "string"
+    },
+    "description": {
+      "description": "视图描述",
+      "type": "string"
+    },
+    "columns": {
+      "description": "数据列",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name"],
+        "properties": {
+          "id": {
+            "description": "列标识",
+            "type": "string"
+          },
+          "name": {
+            "description": "列名称",
+            "type": "string"
+          },
+          "field": {
+            "description": "数据字段名",
+            "type": "string"
+          },
+          "style-width": {
+            "description": "显示样式-宽度",
+            "type": "string"
+          },
+          "style-word-wrap": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}
