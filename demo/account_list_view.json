@@ -1,0 +1,5 @@
+{
+    "$schema": "https://sinstry.github.io/json-schema/list_view.schema.json",
+    "id": "account_list_view",
+    "label": "客户"
+}

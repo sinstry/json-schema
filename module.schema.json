@@ -3,18 +3,18 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "description": "module",
     "type": "object",
-    "required": [ "_id", "name" ],
+    "required": [ "id", "name" ],
     "properties": {
       "id": {
-        "description": "应用标识",
+        "description": "模块标识",
         "type": "string"
       },
       "name": {
-        "description": "应用名称",
+        "description": "模块名称",
         "type": "string"
       },
       "description": {
-        "description": "应用描述",
+        "description": "模块描述",
         "type": "string"
       },
       "icon_slds": {
