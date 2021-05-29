@@ -53,7 +53,7 @@
                 "description": "对象名称",
                 "type": "string"
               },
-              "parent": {
+              "parent_id": {
                 "description": "父级对象标识",
                 "type": "string"
               },
