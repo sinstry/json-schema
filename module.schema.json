@@ -5,7 +5,7 @@
     "type": "object",
     "required": [ "_id", "name" ],
     "properties": {
-      "_id": {
+      "id": {
         "description": "应用标识",
         "type": "string"
       },
@@ -22,7 +22,7 @@
         "type": "string"
       },
       "objects": {
-        "description": "模块包含的实体对象",
+        "description": "模块包含的实体对象，模块下自动生成相应菜单或入口",
         "type": "array",
         "items": {
           "type": "string"
@@ -34,13 +34,18 @@
       "order": {
         "type": "number"
       },
-      "system_setting_objects": {
+      "setting_objects": {
         "description": "由系统管理员去维护数据的实体对象",
         "type": "array",
         "items": {
           "type": "object",
+          "required": [ "id", "name" ],
           "properties": {
-            "_id": {
+            "id": {
+                "description": "节点标识",
+                "type": "string"
+              },
+              "object": {
                 "description": "对象标识",
                 "type": "string"
               },

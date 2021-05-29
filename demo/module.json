@@ -1,0 +1,25 @@
+{
+    "$schema": "https://sinstry.github.io/json-schema/module.schema.json",
+    "id": "crm",
+    "name": "CRM",
+    "description": "通用客户关系管理模块",
+    "order": 10,
+    "objects": [
+        "contact",
+        "company",
+        "task",
+        "event"
+    ],
+    "setting_objects": [
+        {
+            "id": "crm",
+            "name": "客户"
+        },
+        {
+            "id": "account_type",
+            "object": "account_type",
+            "name": "客户类别",
+            "parent_id": "crm"
+        }
+    ]
+}
