@@ -1,0 +1,66 @@
+{
+    "$id": "https://sinstry.github.io/json-schema/module.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "description": "module",
+    "type": "object",
+    "required": [ "_id", "name" ],
+    "properties": {
+      "_id": {
+        "description": "应用标识",
+        "type": "string"
+      },
+      "name": {
+        "description": "应用名称",
+        "type": "string"
+      },
+      "description": {
+        "description": "应用描述",
+        "type": "string"
+      },
+      "icon_slds": {
+        "description": "图标",
+        "type": "string"
+      },
+      "objects": {
+        "description": "模块包含的实体对象",
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "visible": {
+        "type": "boolean"
+      },
+      "order": {
+        "type": "number"
+      },
+      "system_setting_objects": {
+        "description": "由系统管理员去维护数据的实体对象",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "_id": {
+                "description": "对象标识",
+                "type": "string"
+              },
+              "name": {
+                "description": "对象名称",
+                "type": "string"
+              },
+              "parent": {
+                "description": "父级对象标识",
+                "type": "string"
+              },
+              "permission": {
+                "description": "权限设置",
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+          }
+        }
+      }
+    }
+  }
